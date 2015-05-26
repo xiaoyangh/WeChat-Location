@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320A8C181B12D07400683E8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C171B12D07400683E8E /* main.m */; };
+		320A8C1B1B12D07400683E8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C1A1B12D07400683E8E /* AppDelegate.m */; };
+		320A8C1E1B12D07400683E8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C1D1B12D07400683E8E /* ViewController.m */; };
+		320A8C231B12D07400683E8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320A8C221B12D07400683E8E /* Images.xcassets */; };
+		320A8C261B12D07400683E8E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 320A8C241B12D07400683E8E /* LaunchScreen.xib */; };
+		320A8C321B12D07400683E8E /* WeChatLocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C311B12D07400683E8E /* WeChatLocationDemoTests.m */; };
+		320A8C541B12D19800683E8E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C3E1B12D19800683E8E /* MASCompositeConstraint.m */; };
+		320A8C551B12D19800683E8E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C411B12D19800683E8E /* MASConstraint.m */; };
+		320A8C561B12D19800683E8E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C431B12D19800683E8E /* MASConstraintMaker.m */; };
+		320A8C571B12D19800683E8E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C451B12D19800683E8E /* MASLayoutConstraint.m */; };
+		320A8C581B12D19800683E8E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C491B12D19800683E8E /* MASViewAttribute.m */; };
+		320A8C591B12D19800683E8E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C4B1B12D19800683E8E /* MASViewConstraint.m */; };
+		320A8C5A1B12D19800683E8E /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C4D1B12D19800683E8E /* NSArray+MASAdditions.m */; };
+		320A8C5B1B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C501B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		320A8C5C1B12D19800683E8E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C521B12D19800683E8E /* View+MASAdditions.m */; };
+		320A8C6E1B12F80F00683E8E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C6C1B12F7F800683E8E /* Security.framework */; };
+		320A8C701B12F82300683E8E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C6F1B12F82300683E8E /* MessageUI.framework */; };
+		320A8C7D1B12F8EF00683E8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C7B1B12F8D100683E8E /* CoreGraphics.framework */; };
+		320A8C7E1B12F8F400683E8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C791B12F8C000683E8E /* UIKit.framework */; };
+		320A8C7F1B12F8F700683E8E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C771B12F8B700683E8E /* SystemConfiguration.framework */; };
+		320A8C801B12F8FA00683E8E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C751B12F8A200683E8E /* CoreLocation.framework */; };
+		320A8C811B12F90000683E8E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C711B12F86000683E8E /* OpenGLES.framework */; };
+		320A8C821B12F90400683E8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8C731B12F89000683E8E /* QuartzCore.framework */; };
+		320A8C901B1312E200683E8E /* LocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C8F1B1312E200683E8E /* LocationCell.m */; };
+		320A8C941B1313B800683E8E /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A8C931B1313B800683E8E /* LocationModel.m */; };
+		320A8CA61B14087100683E8E /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A8CA51B14087100683E8E /* BaiduMapAPI.framework */; };
+		320A8CA91B14087B00683E8E /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320A8CA81B14087B00683E8E /* mapapi.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		320A8C2C1B12D07400683E8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A8C0A1B12D07300683E8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 320A8C111B12D07400683E8E;
+			remoteInfo = WeChatLocationDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		320A8C121B12D07400683E8E /* WeChatLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		320A8C161B12D07400683E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A8C171B12D07400683E8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		320A8C191B12D07400683E8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		320A8C1A1B12D07400683E8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		320A8C1C1B12D07400683E8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		320A8C1D1B12D07400683E8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		320A8C221B12D07400683E8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		320A8C251B12D07400683E8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		320A8C2B1B12D07400683E8E /* WeChatLocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatLocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		320A8C301B12D07400683E8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A8C311B12D07400683E8E /* WeChatLocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatLocationDemoTests.m; sourceTree = "<group>"; };
+		320A8C3D1B12D19800683E8E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		320A8C3E1B12D19800683E8E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		320A8C3F1B12D19800683E8E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		320A8C401B12D19800683E8E /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		320A8C411B12D19800683E8E /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		320A8C421B12D19800683E8E /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		320A8C431B12D19800683E8E /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		320A8C441B12D19800683E8E /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		320A8C451B12D19800683E8E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		320A8C461B12D19800683E8E /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		320A8C471B12D19800683E8E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		320A8C481B12D19800683E8E /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		320A8C491B12D19800683E8E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		320A8C4A1B12D19800683E8E /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		320A8C4B1B12D19800683E8E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		320A8C4C1B12D19800683E8E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		320A8C4D1B12D19800683E8E /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		320A8C4E1B12D19800683E8E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		320A8C4F1B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		320A8C501B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		320A8C511B12D19800683E8E /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		320A8C521B12D19800683E8E /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		320A8C531B12D19800683E8E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		320A8C6C1B12F7F800683E8E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		320A8C6F1B12F82300683E8E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		320A8C711B12F86000683E8E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		320A8C731B12F89000683E8E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		320A8C751B12F8A200683E8E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		320A8C771B12F8B700683E8E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		320A8C791B12F8C000683E8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		320A8C7B1B12F8D100683E8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		320A8C8E1B1312E200683E8E /* LocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCell.h; sourceTree = "<group>"; };
+		320A8C8F1B1312E200683E8E /* LocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCell.m; sourceTree = "<group>"; };
+		320A8C921B1313B800683E8E /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		320A8C931B1313B800683E8E /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
+		320A8CA51B14087100683E8E /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		320A8CA81B14087B00683E8E /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		320A8C0F1B12D07400683E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A8C7E1B12F8F400683E8E /* UIKit.framework in Frameworks */,
+				320A8C7F1B12F8F700683E8E /* SystemConfiguration.framework in Frameworks */,
+				320A8C7D1B12F8EF00683E8E /* CoreGraphics.framework in Frameworks */,
+				320A8C801B12F8FA00683E8E /* CoreLocation.framework in Frameworks */,
+				320A8C701B12F82300683E8E /* MessageUI.framework in Frameworks */,
+				320A8CA61B14087100683E8E /* BaiduMapAPI.framework in Frameworks */,
+				320A8C6E1B12F80F00683E8E /* Security.framework in Frameworks */,
+				320A8C811B12F90000683E8E /* OpenGLES.framework in Frameworks */,
+				320A8C821B12F90400683E8E /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A8C281B12D07400683E8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320A8C091B12D07300683E8E = {
+			isa = PBXGroup;
+			children = (
+				320A8C141B12D07400683E8E /* WeChatLocationDemo */,
+				320A8C2E1B12D07400683E8E /* WeChatLocationDemoTests */,
+				320A8C131B12D07400683E8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		320A8C131B12D07400683E8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C121B12D07400683E8E /* WeChatLocationDemo.app */,
+				320A8C2B1B12D07400683E8E /* WeChatLocationDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320A8C141B12D07400683E8E /* WeChatLocationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C911B1313A200683E8E /* Model */,
+				320A8C6B1B12F7ED00683E8E /* Frameworks */,
+				320A8C5D1B12D21B00683E8E /* Vendors */,
+				320A8C3B1B12D19800683E8E /* ThirdParty */,
+				320A8C191B12D07400683E8E /* AppDelegate.h */,
+				320A8C1A1B12D07400683E8E /* AppDelegate.m */,
+				320A8C1C1B12D07400683E8E /* ViewController.h */,
+				320A8C1D1B12D07400683E8E /* ViewController.m */,
+				320A8C8E1B1312E200683E8E /* LocationCell.h */,
+				320A8C8F1B1312E200683E8E /* LocationCell.m */,
+				320A8C221B12D07400683E8E /* Images.xcassets */,
+				320A8C241B12D07400683E8E /* LaunchScreen.xib */,
+				320A8C151B12D07400683E8E /* Supporting Files */,
+			);
+			path = WeChatLocationDemo;
+			sourceTree = "<group>";
+		};
+		320A8C151B12D07400683E8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C161B12D07400683E8E /* Info.plist */,
+				320A8C171B12D07400683E8E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		320A8C2E1B12D07400683E8E /* WeChatLocationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C311B12D07400683E8E /* WeChatLocationDemoTests.m */,
+				320A8C2F1B12D07400683E8E /* Supporting Files */,
+			);
+			path = WeChatLocationDemoTests;
+			sourceTree = "<group>";
+		};
+		320A8C2F1B12D07400683E8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C301B12D07400683E8E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		320A8C3B1B12D19800683E8E /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C3C1B12D19800683E8E /* Masonry */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		320A8C3C1B12D19800683E8E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C3D1B12D19800683E8E /* MASCompositeConstraint.h */,
+				320A8C3E1B12D19800683E8E /* MASCompositeConstraint.m */,
+				320A8C3F1B12D19800683E8E /* MASConstraint+Private.h */,
+				320A8C401B12D19800683E8E /* MASConstraint.h */,
+				320A8C411B12D19800683E8E /* MASConstraint.m */,
+				320A8C421B12D19800683E8E /* MASConstraintMaker.h */,
+				320A8C431B12D19800683E8E /* MASConstraintMaker.m */,
+				320A8C441B12D19800683E8E /* MASLayoutConstraint.h */,
+				320A8C451B12D19800683E8E /* MASLayoutConstraint.m */,
+				320A8C461B12D19800683E8E /* Masonry.h */,
+				320A8C471B12D19800683E8E /* MASUtilities.h */,
+				320A8C481B12D19800683E8E /* MASViewAttribute.h */,
+				320A8C491B12D19800683E8E /* MASViewAttribute.m */,
+				320A8C4A1B12D19800683E8E /* MASViewConstraint.h */,
+				320A8C4B1B12D19800683E8E /* MASViewConstraint.m */,
+				320A8C4C1B12D19800683E8E /* NSArray+MASAdditions.h */,
+				320A8C4D1B12D19800683E8E /* NSArray+MASAdditions.m */,
+				320A8C4E1B12D19800683E8E /* NSArray+MASShorthandAdditions.h */,
+				320A8C4F1B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				320A8C501B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.m */,
+				320A8C511B12D19800683E8E /* View+MASAdditions.h */,
+				320A8C521B12D19800683E8E /* View+MASAdditions.m */,
+				320A8C531B12D19800683E8E /* View+MASShorthandAdditions.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		320A8C5D1B12D21B00683E8E /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				320A8CA71B14087B00683E8E /* Resources */,
+				320A8CA51B14087100683E8E /* BaiduMapAPI.framework */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		320A8C6B1B12F7ED00683E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C7B1B12F8D100683E8E /* CoreGraphics.framework */,
+				320A8C791B12F8C000683E8E /* UIKit.framework */,
+				320A8C771B12F8B700683E8E /* SystemConfiguration.framework */,
+				320A8C751B12F8A200683E8E /* CoreLocation.framework */,
+				320A8C731B12F89000683E8E /* QuartzCore.framework */,
+				320A8C711B12F86000683E8E /* OpenGLES.framework */,
+				320A8C6F1B12F82300683E8E /* MessageUI.framework */,
+				320A8C6C1B12F7F800683E8E /* Security.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		320A8C911B1313A200683E8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				320A8C921B1313B800683E8E /* LocationModel.h */,
+				320A8C931B1313B800683E8E /* LocationModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		320A8CA71B14087B00683E8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				320A8CA81B14087B00683E8E /* mapapi.bundle */,
+			);
+			name = Resources;
+			path = BaiduMapAPI.framework/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		320A8C111B12D07400683E8E /* WeChatLocationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320A8C351B12D07400683E8E /* Build configuration list for PBXNativeTarget "WeChatLocationDemo" */;
+			buildPhases = (
+				320A8C0E1B12D07400683E8E /* Sources */,
+				320A8C0F1B12D07400683E8E /* Frameworks */,
+				320A8C101B12D07400683E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeChatLocationDemo;
+			productName = WeChatLocationDemo;
+			productReference = 320A8C121B12D07400683E8E /* WeChatLocationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		320A8C2A1B12D07400683E8E /* WeChatLocationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 320A8C381B12D07400683E8E /* Build configuration list for PBXNativeTarget "WeChatLocationDemoTests" */;
+			buildPhases = (
+				320A8C271B12D07400683E8E /* Sources */,
+				320A8C281B12D07400683E8E /* Frameworks */,
+				320A8C291B12D07400683E8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				320A8C2D1B12D07400683E8E /* PBXTargetDependency */,
+			);
+			name = WeChatLocationDemoTests;
+			productName = WeChatLocationDemoTests;
+			productReference = 320A8C2B1B12D07400683E8E /* WeChatLocationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		320A8C0A1B12D07300683E8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Email：xiaoyangh@foxmail.com";
+				TargetAttributes = {
+					320A8C111B12D07400683E8E = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 4BGW3E8CJ3;
+					};
+					320A8C2A1B12D07400683E8E = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 320A8C111B12D07400683E8E;
+					};
+				};
+			};
+			buildConfigurationList = 320A8C0D1B12D07300683E8E /* Build configuration list for PBXProject "WeChatLocationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 320A8C091B12D07300683E8E;
+			productRefGroup = 320A8C131B12D07400683E8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				320A8C111B12D07400683E8E /* WeChatLocationDemo */,
+				320A8C2A1B12D07400683E8E /* WeChatLocationDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		320A8C101B12D07400683E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A8CA91B14087B00683E8E /* mapapi.bundle in Resources */,
+				320A8C261B12D07400683E8E /* LaunchScreen.xib in Resources */,
+				320A8C231B12D07400683E8E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A8C291B12D07400683E8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		320A8C0E1B12D07400683E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A8C941B1313B800683E8E /* LocationModel.m in Sources */,
+				320A8C5B1B12D19800683E8E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				320A8C591B12D19800683E8E /* MASViewConstraint.m in Sources */,
+				320A8C901B1312E200683E8E /* LocationCell.m in Sources */,
+				320A8C541B12D19800683E8E /* MASCompositeConstraint.m in Sources */,
+				320A8C5A1B12D19800683E8E /* NSArray+MASAdditions.m in Sources */,
+				320A8C1E1B12D07400683E8E /* ViewController.m in Sources */,
+				320A8C1B1B12D07400683E8E /* AppDelegate.m in Sources */,
+				320A8C571B12D19800683E8E /* MASLayoutConstraint.m in Sources */,
+				320A8C181B12D07400683E8E /* main.m in Sources */,
+				320A8C5C1B12D19800683E8E /* View+MASAdditions.m in Sources */,
+				320A8C581B12D19800683E8E /* MASViewAttribute.m in Sources */,
+				320A8C551B12D19800683E8E /* MASConstraint.m in Sources */,
+				320A8C561B12D19800683E8E /* MASConstraintMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		320A8C271B12D07400683E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320A8C321B12D07400683E8E /* WeChatLocationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		320A8C2D1B12D07400683E8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 320A8C111B12D07400683E8E /* WeChatLocationDemo */;
+			targetProxy = 320A8C2C1B12D07400683E8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		320A8C241B12D07400683E8E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				320A8C251B12D07400683E8E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		320A8C331B12D07400683E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		320A8C341B12D07400683E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		320A8C361B12D07400683E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors/Release-iphoneos",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors/Release-iphonesimulator",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = WeChatLocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		320A8C371B12D07400683E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors/Release-iphoneos",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors/Release-iphonesimulator",
+					"$(PROJECT_DIR)/WeChatLocationDemo/Vendors",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = WeChatLocationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		320A8C391B12D07400683E8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeChatLocationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatLocationDemo.app/WeChatLocationDemo";
+			};
+			name = Debug;
+		};
+		320A8C3A1B12D07400683E8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WeChatLocationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatLocationDemo.app/WeChatLocationDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		320A8C0D1B12D07300683E8E /* Build configuration list for PBXProject "WeChatLocationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320A8C331B12D07400683E8E /* Debug */,
+				320A8C341B12D07400683E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		320A8C351B12D07400683E8E /* Build configuration list for PBXNativeTarget "WeChatLocationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320A8C361B12D07400683E8E /* Debug */,
+				320A8C371B12D07400683E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		320A8C381B12D07400683E8E /* Build configuration list for PBXNativeTarget "WeChatLocationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				320A8C391B12D07400683E8E /* Debug */,
+				320A8C3A1B12D07400683E8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 320A8C0A1B12D07300683E8E /* Project object */;
+}
